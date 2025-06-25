@@ -61,7 +61,7 @@ function hello()
 {
    
     let idx = Math.floor(Math.random() * posts.length);
-    
+
 
     var div = document.getElementById("dd");
     
@@ -75,4 +75,12 @@ function hello()
     // var p = document.getElementById("post"); 
     // p.innerText="s";
     // console.log(p.innerText);
+}
+async function  c (){
+    
+    const p = document.getElementById("post");
+    const textToCopy = p.innerText;
+
+        await navigator.clipboard.writeText(textToCopy);
+    alert("Copied");
 }
