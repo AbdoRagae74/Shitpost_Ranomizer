@@ -60,16 +60,13 @@ let previousIdx = -1;
 
 function hello()
 {
-   
+    console.log(previousIdx);
     let idx ;
 
         do {
         idx = Math.floor(Math.random() * posts.length);
     } while (idx === previousIdx);
-
     previousIdx = idx;
-
-
     var div = document.getElementById("dd");
     
     const p = document.getElementById("post");
