@@ -5,17 +5,42 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shitpost randomizer</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div id="dd" style="display: flex; flex-direction: column; align-items: center; height: 100vh;">
-        <p id="post" style="min-height: 500px; text-align: center;">
-            Hello
-        </p>
-        <button onclick="hello()" id="btn">Shitpost please</button>
-        <button onclick="c()">Copy</button>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
+  <div class="container-fluid">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <section class="d-flex flex-column justify-content-center align-items-center mx-auto " >
+     <button class="btn btn-outline-success" onclick="hello()" id="btn">Shitpost please</button>
+     <br>
+    <button class="btn btn-outline-success" onclick="c()">Copy</button>
+</section>
     </div>
+  </div>
+</nav>
+
+  <div id="dd" style="
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    gap: 16px;
+  ">
+    <p id="post" style="min-height: 2em; text-align: center; font-size: 1.2em;">
+      Hello
+    </p>
+
+
+  </div>
 </body>
 
     <script src="main.js"></script>
+    
 </html>
+
