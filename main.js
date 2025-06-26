@@ -56,25 +56,26 @@ let posts = [
 
 ]
 
+let previousIdx = -1;
 
 function hello()
 {
    
-    let idx = Math.floor(Math.random() * posts.length);
+    let idx ;
+
+        do {
+        idx = Math.floor(Math.random() * posts.length);
+    } while (idx === previousIdx);
+
+    previousIdx = idx;
 
 
     var div = document.getElementById("dd");
     
     const p = document.getElementById("post");
-    //document.createElement("p");
         p.innerText = posts[idx];
-        console.log(p);
-        // div.append(p); 
-        // div.appendChild(p);
+        // console.log(p);
     
-    // var p = document.getElementById("post"); 
-    // p.innerText="s";
-    // console.log(p.innerText);
 }
 async function  c (){
     
